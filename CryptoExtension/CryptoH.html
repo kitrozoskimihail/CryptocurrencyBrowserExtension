@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="CryptoC.css" />
+    <script src="Chart.bundle.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Red+Hat+Text:400,500&display=swap" rel="stylesheet">
+    <title>CRYPTO CURRENCY EXTENSION</title>
+
+</head>
+
+<body>
+
+        <div>
+            <div class="btc">
+                <div class="asset-info">
+                    <div class="title">
+                        <h1 class="head">BTC</h1>
+                    </div>
+                    <div class="details">
+                        <h3 id="btcPrice"></h3 >
+                    </div>
+                </div>
+                <canvas id="btcChart"></canvas>
+            </div>
+
+            <div class="doge">
+                <div class="asset-info">
+                    <div class="title">
+                        <h1 class="head">DOGE</h1>
+                    </div>
+                    <div class="details">
+                        <h3 id="atomPrice"></h3>
+                    </div>
+                </div>
+                <canvas id="dogeChart"></canvas>
+            </div>
+
+            <div class="ethereum">
+                <div class="asset-info">
+                    <div class="title">
+                        <h1 class="head">ETH</h1>
+                    </div>
+                    <div class="details">
+                        <h3 id="ethPrice"></h3>
+                    </div>
+                </div>
+                <canvas id="ethChart"></canvas>
+            </div>
+        </div>
+
+    <br>
+
+    <form id="currencyForm">
+        <label for="currency">CURRENCY:</label>
+        <br>
+        <select name="cars" id="currency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+        </select>
+        <input type="submit" value="Convert">
+    </form>
+
+    <script src="CryptoJ.js"></script>
+</body>
+</html>
